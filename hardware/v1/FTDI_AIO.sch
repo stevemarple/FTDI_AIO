@@ -2925,6 +2925,8 @@ Derived from Sparkfun library.</description>
 </class>
 <class number="1" name="power" width="0" drill="0">
 </class>
+<class number="2" name="Vusb_filt" width="0.3048" drill="0">
+</class>
 </classes>
 <parts>
 <part name="IC2" library="SteveMarple" deviceset="FT232RL" device="SSOP-HAND" value="FT232RL"/>
@@ -3290,7 +3292,7 @@ wired to GND</text>
 <pinref part="X2" gate="G$1" pin="D-"/>
 </segment>
 </net>
-<net name="VUSB_FILT" class="0">
+<net name="VUSB_FILT" class="2">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCC"/>
 <wire x1="137.16" y1="71.12" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
@@ -3308,7 +3310,7 @@ wired to GND</text>
 <pinref part="L1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="VUSB" class="0">
+<net name="VUSB" class="2">
 <segment>
 <pinref part="X2" gate="G$1" pin="GND"/>
 <wire x1="121.92" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
