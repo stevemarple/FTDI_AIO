@@ -129,10 +129,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="49.53" y2="0" width="0" layer="20"/>
-<wire x1="49.53" y1="0" x2="49.53" y2="49.53" width="0" layer="20"/>
-<wire x1="49.53" y1="49.53" x2="0" y2="49.53" width="0" layer="20"/>
-<wire x1="0" y1="49.53" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="1.27" y1="0" x2="48.26" y2="0" width="0" layer="20"/>
+<wire x1="49.53" y1="1.27" x2="49.53" y2="48.26" width="0" layer="20"/>
 <text x="13.97" y="36.195" size="1.27" layer="121" ratio="10" rot="R90" align="center-right">VCC</text>
 <text x="13.97" y="42.545" size="1.27" layer="121" ratio="10" rot="R90" align="center-left">IO</text>
 <text x="11.43" y="42.545" size="1.27" layer="121" ratio="10" rot="R90" align="center-left">+5V</text>
@@ -153,6 +151,12 @@ Attribution-ShareAlike 3.0</text>
 GRN</text>
 <text x="45.212" y="2.54" size="1.27" layer="121" ratio="10" rot="R90" align="bottom-center">GND
 BLK</text>
+<wire x1="48.26" y1="49.53" x2="1.27" y2="49.53" width="0" layer="20"/>
+<wire x1="0" y1="48.26" x2="0" y2="1.27" width="0" layer="20"/>
+<wire x1="48.26" y1="49.53" x2="49.53" y2="48.26" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="48.26" x2="1.27" y2="49.53" width="0" layer="20" curve="-90"/>
+<wire x1="49.53" y1="1.27" x2="48.26" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="SparkFun">
