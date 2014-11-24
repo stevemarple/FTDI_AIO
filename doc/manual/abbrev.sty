@@ -133,7 +133,9 @@
 
 
 \newcommand{\printabbrev}{\@input@{\jobname.abr}}
-\newenvironment{theabbrev}{\chapter{\abbrevname}}{}
+\newcommand{\abbrevsection}[1]{\chapter{#1}}
+%\newenvironment{theabbrev}{\chapter{\abbrevname}}{}
+\newenvironment{theabbrev}{\abbrevsection{\abbrevname}}{}
 \newcommand{\abbrevname}{Abbreviations and Acronyms}
 \newcommand{\abbrevitem}[2]{%
   \parbox[t]{1.5in}{\raggedright#1}%

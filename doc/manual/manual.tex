@@ -1,4 +1,4 @@
-\documentclass[twoside,a4paper,openany,12pt]{book}
+\documentclass[twoside,a4paper,openany,12pt]{article}
 
 %%\documentclass[twoside,a4paper,12pt]{article}
 %\documentclass[twoside,a4paper,openany,12pt]{report}
@@ -101,6 +101,7 @@
 
 \usepackage{abbrev}
 \renewcommand{\abbrevname}{Abbreviations}
+\renewcommand{\abbrevsection}[1]{\section*{#1}}
 \input{abbreviations}
 \input{gitlog}
 
@@ -324,13 +325,13 @@ pdfborderstyle={/S/U/W 1}]{hyperref}
   \small{Commit: \gitCommit}}
 \maketitle
 \thispagestyle{empty}
-\frontmatter
-\pagestyle{headings}
+\pagestyle{plain}
 
 % \clearpage  
-% \phantomsection  
+\phantomsection  
+\addcontentsline{toc}{section}{Licence}  
 % % \thispagestyle{empty}
-\chapter{Licence}
+\section*{Licence}
 This document is made available under the \href{\ccBySaFourUrl}{Creative
   Commons Attribution-ShareAlike 4.0 Unported Licence}.
 
@@ -340,33 +341,13 @@ This document is made available under the \href{\ccBySaFourUrl}{Creative
 
 Please attribute this work as \documentAttribution
 
-\clearpage  
-\phantomsection  
-\addcontentsline{toc}{chapter}{\contentsname}  
-\tableofcontents
-
-\newpage
-\phantomsection  
-\addcontentsline{toc}{chapter}{\listfigurename}  
-\listoffigures
-
-%% -----------------------------
-% \newpage
-% \phantomsection  
-% \addcontentsline{toc}{chapter}{\listtablename}  
-% \listoftables
-
-\newpage
-\phantomsection  
-\printabbrev
-
-\mainmatter
 %% Allow for sloppy wordbreaking to avoid text spilling into the
 %% margin (eg as a result of \filename and other non-breaking text)
 \sloppy
 
-\include{construction}
-\include{operation}
+\input{construction}
+\clearpage
+\input{operation}
 
 \end{document}
 
