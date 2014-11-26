@@ -23,6 +23,10 @@
 
 \usepackage{linegoal}
 
+\usepackage{array}
+%\usepackage{longtable}
+\usepackage{supertabular}
+
 %% Color definitions
 \usepackage{color}
 \definecolor{MyLightRed}{rgb}{1,.8,.8}
@@ -349,5 +353,11 @@ Please attribute this work as \documentAttribution
 \clearpage
 \input{operation}
 
+\appendix
+\renewcommand{\thesection}{Appendix~\Alph{section}}
+
+% Use include here, more efficient and want on new pages
+\include{bom}
+\include{schematic}
 \end{document}
 

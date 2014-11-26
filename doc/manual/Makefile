@@ -16,7 +16,10 @@ clean:
 
 
 .PHONY : images
-images : 
+images : images/FTDI_AIO_sch.pdf
+
+images/FTDI_AIO_sch.pdf : ../../hardware/v1/FTDI_AIO_sch.pdf
+	$(CP) $< $@
 
 
 makeabbrev : makeabbrev.c

@@ -1,2 +1,12 @@
 \section{Operation}
 
+\subsection{Selection of logic levels}
+
+\subsection{Selection of operating voltage for connected device}
+
+\warningbox{Standard Arduino boards which operate at \volt{3.3}
+  commonly have the Vcc pin on the ISP interface wired to \volt{5}.
+  This is contrary to normal Atmel protocol where the Vcc pin is used
+  to select the logic level voltage. If in any doubt over the correct
+  setting for Vcc remove the Vcc shunt from JP1.}
+

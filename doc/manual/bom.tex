@@ -1,0 +1,75 @@
+\newlength{\widthManufacturer}
+\settowidth{\widthManufacturer}{Manufacturer}
+\begin{landscape}
+  \section{Bill of materials}
+  \tablefirsthead{%
+    \hline
+    Part & 
+    Description & 
+    Manufacturer & 
+    Manufacturer part number & 
+    Supplier &
+    Order code \\
+    \hline \hline %% ------
+  }
+  \tablehead{%
+    \multicolumn{6}{l}{\small \textsl{continued from previous page}} \\
+    \hline
+    Part & 
+    Description & 
+    Manufacturer & 
+    Manufacturer part number & 
+    Supplier &
+    Order code \\
+    \hline \hline
+  }
+  \tabletail{%
+    \hline
+    \multicolumn{6}{r}{\small \textsl{continued on next page}} \\
+    }
+  \tablelasttail{%
+    \hline
+    }
+
+  \begin{supertabular}{|p{2cm}|>{\raggedright}p{8cm}%
+      |>{\raggedright}p{\widthManufacturer}%
+      |p{5cm}|p{\widthManufacturer}|p{\widthManufacturer}|}
+    C1 & \uF{1} 1206 \smt\ capacitor & & & Farnell & \\ 
+    C2 & \uF{1} 1206 \smt\ capacitor & & & Farnell & \\ 
+    C3 & \nF{100} 1206 \smt\ capacitor & & & Farnell & \\ 
+    C4 & \nF{10} 1206 \smt\ capacitor & & & Farnell & \\ 
+    C5 & \uF{4.7} 1206 \smt\ capacitor & & & Farnell & \\ 
+    C6 & \nF{100} 1206 \smt\ capacitor & & & Farnell & \\ 
+    C7 & \nF{100} 1206 \smt\ capacitor & & & Farnell & \\ 
+    IC1 & \volt{3.3} regulator & Microchip & MCP1702-3302E/TO & Farnell & \\ 
+
+    IC2 & USB-UART converter & FTDI & FT232RL 
+    & {CPC \newline Farnell}
+    & {SC10141 \newline 1146032} \\
+
+    JP1 & $2 \times 3$ jumper block & & & & \\
+    L1 & 0805 \smt\ ferrite bead & Laird technologies & MI0805K400R-10
+    & Farnell & 2292459 \\
+    LED1 & Diffuse yellow \led & Kingbright & L-7104YD & CPC & SC08015 \\
+    LED2 & Diffuse red \led & Kingbright & L-7104ID & CPC & SC08013 \\
+    LED3 & Diffuse green \led & Kingbright & L-7104GD & CPC & SC08014 \\
+    R1 & 1206 \smt\ resistor & & & Farnell & \\
+    R2 & 1206 \smt\ resistor & & & Farnell & \\
+    R3 & \ohm{0} 1206 \smt\ resistor%
+    \footnote{Fit only if not using IC1} & & & Farnell & \\
+    R4 & \kohm{1} 1206 \smt\ resistor & & & Farnell & \\
+    R5 & \kohm{1} 1206 \smt\ resistor & & & Farnell & \\
+    R6 & \kohm{1} 1206 \smt\ resistor & & & Farnell & \\
+    R7 & 1206 \ohm{560} \smt\ resistor & & & Farnell & \\
+    R8 & 1206 \ohm{560} \smt\ resistor & & & Farnell & \\
+    R9 & \kohm{1} 1206 \smt\ resistor & & & Farnell & \\
+    S1 & Switch & & & Farnell & \\
+    X1 & & & & Farnell & \\
+    X2 & & & & Farnell & \\
+    X3 & & & & Farnell & \\
+    Shunt 1 & Fit to JP1 & & & & \\
+    Shunt 2 & Fit to JP1 & & & & \\
+    PCB & Circuit board  & & & & \\
+  \end{supertabular}  
+\end{landscape}
+
