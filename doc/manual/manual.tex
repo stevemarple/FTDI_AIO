@@ -198,7 +198,7 @@ pdfborderstyle={/S/U/W 1}]{hyperref}
 \newcommand{\ccBySaFour}{\href{\ccBySaFourUrl}{CC BY-SA 4.0}}
 \newcommand{\ccByNcSaFour}{\href{\ccByNcSaFourUrl}{CC BY-NC-SA 4.0}}
 
-\newcommand{\rsyncUrl}{http://rsync.samba.org/}
+\newcommand{\githubRepoUrl}{https://github.com/stevemarple/FTDI_AIO}
 %% Copyright, licence, URL.
 \newcommand{\photoCredit}[4][]{\\ %
   \ifthenelse{\equal{#2}{}}{}{ \copyright~#2.}%
@@ -319,11 +319,12 @@ pdfborderstyle={/S/U/W 1}]{hyperref}
 \newcommand{\copyrightyear}{%
   \ifthenelse{\equal{\gitCommitYear}{2014}}{2014}{2014--\gitCommitYear}}
 \newcommand{\documentAttribution}{``FTDI all-in-one manual. Steve
-  R. Marple. \gitCommitYear.''}
+  R. Marple. \gitCommitYear. \githubRepoUrl''}
 
 \begin{document}
 
-\title{FTDI all-in-one manual}
+\title{FTDI all-in-one manual\\ \vspace*{1ex}
+  \smaller \href{\githubRepoUrl}{\githubRepoUrl}}
 \author{Steve R. Marple}
 \date{\gitCommitDate\\
   \small{Commit: \gitCommit}}
@@ -336,14 +337,16 @@ pdfborderstyle={/S/U/W 1}]{hyperref}
 \addcontentsline{toc}{section}{Licence}  
 % % \thispagestyle{empty}
 \section*{Licence}
-This document is made available under the \href{\ccBySaFourUrl}{Creative
-  Commons Attribution-ShareAlike 4.0 Unported Licence}.
+\href{\githubRepoUrl}{FTDI all-in-one} manual by Steve R. Marple is
+licensed under a \href{\ccBySaFourUrl}{Creative Commons Attribution
+  4.0 International License}.
 
 \begin{center}
 \href{\ccBySaFourUrl}{\includegraphics{images/by-sa}}
 \end{center}
 
-Please attribute this work as \documentAttribution
+Please attribute this work as\\*
+\documentAttribution
 
 %% Allow for sloppy wordbreaking to avoid text spilling into the
 %% margin (eg as a result of \filename and other non-breaking text)
